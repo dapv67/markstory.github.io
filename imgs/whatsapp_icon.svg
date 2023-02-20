@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <filter id="Ellipse_1" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 64 64">
+      <image width="64" height="64" xlink:href="data:image/png;base64,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"/>
+    </pattern>
+  </defs>
+  <g id="whatsapp_icon" transform="translate(-270 -1140)">
+    <g transform="matrix(1, 0, 0, 1, 270, 1140)" filter="url(#Ellipse_1)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="28" cy="28" r="28" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <rect id="strong_whatsapp_icon" width="35" height="35" transform="translate(290 1157)" fill="url(#pattern)"/>
+  </g>
+</svg>

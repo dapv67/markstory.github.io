@@ -1,0 +1,86 @@
+/*----------------- Contact --------------------- */
+header {
+  background-color: #f8f8f9;
+}
+.contact {
+  padding: 2rem 1rem;
+  background-color: #f8f8f9;
+}
+.text-contact {
+  text-align: center;
+}
+.form-contact {
+  padding: 1rem;
+  font-weight: 700;
+}
+.encabezado {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.parrafo-contact {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.phone {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.mail {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.phone-link {
+  font-size: 1rem;
+  text-align: center;
+}
+.phone-link a {
+  color: #52525b;
+}
+.email-link {
+  font-size: 1rem;
+  text-align: center;
+}
+.email-link a {
+  color: #52525b;
+}
+.redes-sociales {
+  margin-bottom: 4rem;
+}
+.form-control {
+  border: 0;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) {
+  /* ----------------- content-contact --------------------*/
+  .contact {
+    display: flex;
+    padding: 6rem 6rem 8rem 6rem;
+  }
+  .text-contact {
+    width: 35%;
+    margin-right: 7rem;
+  }
+  #form {
+    width: 65%;
+  }
+  .encabezado {
+    font-size: 3.5rem;
+  }
+  .text-contact {
+    text-align: left;
+  }
+  .phone {
+    justify-content: left;
+  }
+  .mail {
+    justify-content: left;
+  }
+  /* Color de links menu */
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8) !important;
+  }
+}

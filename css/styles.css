@@ -1,0 +1,492 @@
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("Nunito_Sans/NunitoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans Black";
+  src: url("Nunito_Sans/NunitoSans-Black.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans Light";
+  src: url("Nunito_Sans/NunitoSans-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url("Montserrat/Montserrat-Thin.ttf");
+}
+body {
+  font-family: "Nunito Sans Regular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+  height: auto;
+}
+h1,
+h2 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-float {
+  position: fixed;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  cursor: pointer;
+  animation: rebote 0.6s alternate infinite ease-in-out;
+}
+@keyframes rebote {
+  0% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.separador {
+  padding: 1.5rem 1rem;
+}
+
+/* MOBILE VERSION */
+/* -------------------------------- MAIN SECTION ------------------------------------ */
+/* navbar-collapse - mobile */
+.navbar-collapse {
+  background-color: #07009b;
+  padding: 4rem 1.5rem 2.5rem 4rem;
+
+  border-radius: 4px;
+}
+.nav-item .nav-link {
+  /* color: #050914 !important; */
+  /* font-family: "Montserrat Thin"; */
+  font-family: "Nunito Sans Black";
+  text-transform: uppercase;
+  color: #fff !important;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 200;
+
+  margin: 0;
+}
+/* .... */
+.main {
+  background: linear-gradient(-45deg, red 0%, #0b34eb 60%, #ff7100 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease-in-out infinite;
+  min-height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+/* Header-Menu */
+
+header {
+  height: auto;
+}
+.vacio {
+  display: none;
+}
+.menu-languages {
+  margin-top: 3rem;
+}
+.menu-languages .nav-link {
+  font-family: "Nunito Sans Regular";
+  font-size: 2rem;
+}
+/* -----------*/
+
+/* Text */
+.spacer-banner {
+  margin-top: 1rem;
+}
+.banner-text {
+  color: white;
+  padding: 0 1.25rem;
+}
+.content-left {
+  animation: content-left 0.9s ease-in-out;
+}
+@keyframes content-left {
+  0% {
+    transform: translateX(-600%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.main-phrase {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4.5rem;
+}
+.secundary-phrase {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+.img-banner {
+  margin-top: 3rem;
+  animation: content-right 0.9s ease-in-out;
+}
+@keyframes content-right {
+  0% {
+    transform: translateX(600%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* Buttons */
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.55rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  /* background-color: white; */
+}
+
+.btn-main {
+  background-color: white;
+  color: black;
+}
+.btn-main:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-white {
+  background-color: rgba(33, 33, 33, 0.7);
+  color: white;
+  margin-top: 0.5rem;
+}
+
+/* SERVICES */
+.services {
+  background-color: #050914;
+  height: auto;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-services {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.text-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-service {
+  color: white;
+}
+.title-service {
+  margin-top: 2rem;
+  text-align: center;
+}
+.description-service {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* ------------------------------ ABOUT-US SECTION ---------------------------------- */
+.about-us {
+  /* background-color: #2f6fc7; */
+  background-image: url("../imgs/banner-marte.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+/* our-work */
+.our-work {
+  padding: 1rem 1rem;
+  background-color: black;
+  color: white;
+}
+.img-work {
+  position: relative;
+  height: 21rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+.img-work::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.img-work:hover {
+  font-weight: 700;
+  transform: scale(1.1);
+}
+.work-1 {
+  background-image: url("../imgs/mascotini.png");
+}
+.work-2 {
+  background-image: url("../imgs/camioneta.png");
+}
+.work-3 {
+  background-image: url("../imgs/hamburguesa.png");
+}
+.work-4 {
+  background-image: url("../imgs/espacio-hispanos.png");
+}
+.work-5 {
+  background-image: url("../imgs/card-hispanos.png");
+}
+.work-6 {
+  background-image: url("../imgs/perfume.png");
+}
+/*----------------- Contact --------------------- */
+
+.contact-uno a {
+  color: white;
+}
+.phone {
+  font-size: 2.3rem;
+  margin: 1rem 0;
+}
+.email {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.btn-outline {
+  border: 3px solid white;
+  color: white;
+}
+.btn-outline:hover {
+  border: 4px solid white;
+  color: white;
+}
+.social-network {
+  margin-top: 3.5rem;
+}
+/* contact-dos */
+.contact-dos {
+  padding: 0.75rem;
+}
+/* ------------------------------ FOOTER SECTION -------------------------------------- */
+.ifFooter {
+  width: 100% !important;
+  height: 145vh;
+}
+footer {
+  background-color: #ff7100;
+  /* height: auto; */
+  padding: 2rem;
+  color: white;
+}
+.header-footer .main-phrase {
+  text-align: center;
+}
+.description-footer {
+  text-align: center;
+}
+.header-footer .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.description-footer {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.item-content-footer {
+  margin-bottom: 3rem;
+}
+#salto {
+  display: none;
+}
+.logos-footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.subtitle {
+  font-weight: 700;
+  text-align: left;
+}
+.links-footer {
+  display: flex;
+  justify-content: center;
+}
+.links-footer a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+.hiperlinks a {
+  color: white;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) {
+  .menu-languages {
+    display: none;
+  }
+  .navbar-collapse {
+    /* background-color: #f8f8f9; */
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    /* height: 90vh; */
+  }
+  .nav-item .nav-link {
+    font-family: "Nunito Sans Regular";
+    color: #fff !important;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  .separador {
+    padding: 5rem 7rem;
+  }
+  /* --------------------- Main section -------------------- */
+  /* Header-Menu */
+  header {
+    padding: 1rem 1.5rem;
+  }
+  .navbar-brand {
+    width: 16%;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-collapse {
+    width: 68%;
+  }
+  .navbar-nav {
+    margin: auto;
+  }
+  .vacio {
+    display: flex;
+    width: 16%;
+    justify-content: flex-end;
+  }
+  /* idiomas */
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 0;
+    margin-top: 0.125rem;
+  }
+  .selector {
+    color: #212121;
+    font-weight: 500;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0.22rem 0.5rem;
+  }
+  .selector:hover {
+    background-color: #5e78aa;
+  }
+  /* ------------------------------------------------------------------------- */
+  /* Text */
+  .banner-text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 8rem;
+    padding: 0 10rem;
+    margin-right: 5rem;
+    /* column-gap: 3rem; */
+  }
+  .main-phrase {
+    text-align: left;
+    font-size: 3.3rem;
+  }
+  .secundary-phrase {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+  }
+  .btn {
+    max-width: 20rem;
+  }
+  .btn-main {
+    margin-right: 2rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* ------------------- services ----------------------------- */
+
+  .title-services {
+    font-size: 3.5rem;
+    padding-bottom: 4rem;
+  }
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* our-work */
+  .our-work {
+    padding: 5rem 0;
+  }
+  .img-work {
+    height: 20rem;
+  }
+  .work {
+    position: relative;
+  }
+
+  /* ------------------- Footer --------------------- */
+  .ifFooter {
+    height: 111vh;
+  }
+  footer {
+    padding: 1.75rem 8rem;
+  }
+  .header-footer {
+    padding: 0 10rem 1.5rem 10rem;
+  }
+  .content-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .item-content-footer {
+    max-width: 20rem;
+  }
+  #salto {
+    display: block;
+  }
+  .item-content-footer .subtitle {
+    font-weight: 500;
+  }
+  .redes-sociales a {
+    margin-right: 1rem;
+  }
+}
